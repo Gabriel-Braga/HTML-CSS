@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kama-FB</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Gabriel Braga"/>
+        <meta name="description" content="Fan-base de Kamaitachi"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+        <link rel="stylesheet" type="text/css" href="../_css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../_css/pag-p-style.css"/>
+        <link rel="stylesheet" type="text/css" href="../_font-awesome/css/font-awesome.css"/>
+        <link rel="stylesheet" type="text/css" href="../_css/animate.css"/>
+        <script type="text/javascript" src="../jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="../_js/bootstrap.min.js"></script>   
+    </head>
+    <body>
+        <div class="container-fluid p-0">
+<!--Navbar do Site-->
+            <nav class="navbar navbar-light bg-Kama p-0" id="navegacao">
+                <div class="container-fluid p-0">
+                    <div class="row no-gutters w-100">
+                        <div class="order-1 col-6 col-md-3">
+                            <div class="row no-gutters w-100 animated fadeInLeft">
+                                <h1 class="text-light m-0 font-Simplifica col-12 py-1">
+                                <img src="../_images/kama.png" width="60px" height="60px"/>
+                                    K&nbsp; a&nbsp; m&nbsp; a&nbsp; i&nbsp; t&nbsp; a&nbsp; c&nbsp; h&nbsp; i&nbsp;
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="order-3 order-md-2 col-12 col-md-5 d-flex align-items-center">
+                            <div class="navbar-nav aument align-items-center w-100">
+                                <div class="row no-gutters w-100">
+                                    <a class="nav-item nav-link text-light col d-flex justify-content-center animated fadeInDown" href="../index.html">Início</a>
+                                    <a class="nav-item nav-link text-light col d-flex justify-content-center animated fadeInDown" href="history.html">História</a>
+                                    <a class="nav-item nav-link text-light col d-flex justify-content-center animated fadeInDown" href="posts.html">Postagens</a>
+                                    <a class="nav-item nav-link text-light col d-flex justify-content-center animated fadeInDown" href="letras.html">Letras</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-2 order-md-3 col-6 col-md-4 d-flex justify-content-center align-items-center">
+                            <form class="form-inline animated fadeInRight">
+                                <input class="form-control mr-2" type="search" placeholder="Pesquisar"/>
+                                <button class="btn btn-outline-danger" type="submit">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="canto-r"></div>
+            <div class="canto-l"></div>
+
+<!--Infornações do Site-->
+            <div class="container-fluid p-0">
+                <div class="row justify-content-around m-0">
+                    <section class="bloco-texto border col-12 col-lg-8 animated fadeInUp order-2 order-lg-1">
+                        <h6 class="text-cinza text-center msg">None posts found</h6>
+                    </section>
+                    <div class="bloco-texto border col-12 col-lg-3 animated fadeInRight create-posts order-1 order-lg-2">
+                        <h5 class="titulo-p">
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                            Criar/Postar
+                        </h5>
+                        <hr class="m-2 mx-0"/>
+                        <div class="mx-2">
+                            <div class="container-fluid p-0 justify-content-center">
+                                <div class="row m-0 justify-content-center">
+                                    <button class="btn btn-outline-primary m-2 btn-posts col col-lg-12" data-toggle="modal" data-target="#post-texto">
+                                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        &nbsp;Texto
+                                    </button>
+                                    <button class="btn btn-outline-success m-2 btn-posts col col-lg-12" data-toggle="modal" data-target="#post-cover">
+                                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                                        &nbsp;Cover
+                                    </button>
+                                    <button class="btn btn-outline-danger m-2 btn-posts col col-lg-12" data-toggle="modal" data-target="#post-fanfic">
+                                        <i class="fa fa-bomb" aria-hidden="true"></i>
+                                        &nbsp;Fanfic
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+<!--Modais da página-->
+            <div class="modal fade" id="post-texto">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-center text-cinza mb-0">Esvreva seu Posts de Texto -</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <textarea rows="15" class="form-control" placeholder="Digite aqui ..."></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-dismiss="modal">
+                                Enviar
+                            </button>
+                            <button class="btn btn-primary" data-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="post-cover">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-center text-cinza mb-0">Poste sua cover -</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-group m-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@Titulo</span>
+                                    </div>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                                <div class="input-group m-2">
+                                    <input type="text" class="form-control"/>
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">autor</span>
+                                    </div>
+                                </div>
+                                <div class="form-group ml-2 p-2 border rounded">
+                                    <input type="file" class="form-control-flie">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success" data-dismiss="modal">
+                                Enviar
+                            </button>
+                            <button class="btn btn-success" data-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="post-fanfic">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-center text-cinza mb-0">Poste sua Fanfic -</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="input-group m-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@Titulo</span>
+                                    </div>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                                <div class="input-group m-2">
+                                    <input type="text" class="form-control"/>
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">autor</span>
+                                    </div>
+                                </div>
+                                <div class="input-group m-2">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">#Tema</span>
+                                    </div>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                                <div class="form-group ml-2 p-2 border rounded">
+                                    <input type="file" class="form-control-flie">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">
+                                Enviar
+                            </button>
+                            <button class="btn btn-danger" data-dismiss="modal">
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!--Roda-pé do Site-->
+            <footer class="footer">
+                <div class="container-fluid p-0">
+                    <div class="row w-100">
+                        <div class="col-6 col-md-3">
+                            <h5 class="color-f mt-2 mb-1 h4 pl-4">Redes sociais</h5>
+                            <hr class="my-1 bg-f ml-2"/>
+                            <ul class="list-unstyled py-1 pl-4">
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                        &nbsp;@Kama-official
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                        &nbsp;Kama-FB-page
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        &nbsp;Kama-Fb-Inst
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-twitch" aria-hidden="true"></i>
+                                        &nbsp;Kama-FB-TW
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h5 class="color-f mt-2 mb-1 h4 pl-4">Informações a+</h5>
+                            <hr class="my-1 bg-f ml-2"/>
+                            <ul class="list-unstyled py-1 pl-4">
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                        &nbsp;Patrocinadores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                        &nbsp;Fundadores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                        &nbsp;Colaboradores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-footer color-f" href="">
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                        &nbsp;FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center" id="marca">
+                            <div class="row p-2 border border-secondary rounded">
+                                <div class="col-12">
+                                    <h4 class="h2 text-center color-f">Kama-FanBase</h4>
+                                </div>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <img src="../_images/kama-f.png" width="80px" height="80px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center">
+                            <a class="subir" href="#navegacao" id="subir" >
+                                <i class="fa fa-chevron-circle-up fa-5x" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row no-gutters w-100">
+                        <div class="col-12 d-flex justify-content-center aling-items-center bg-final">
+                            <h3 class="m-2 color-f" id="final">Gabriel Braga - 2018 © <em>Copyright</em> | "Um FanSite de respeito..."</h3>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

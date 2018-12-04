@@ -1,0 +1,330 @@
+/* Fontes para o site */
+    @font-face {
+        font-family: Simplifica;
+        src: url(../_fonts/SIMPLIFICA\ Typeface.ttf);
+    }
+    @font-face {
+        font-family: Josefin-Slab;
+        src: url(../_fonts/JosefinSlab-Regular.ttf)
+    }
+    @font-face {
+        font-family: Josefin-Slab-Italic;
+        src: url(../_fonts/JosefinSlab-Italic.ttf)
+    }
+    @font-face {
+        font-family: Josefin-Slab-Bold;
+        src: url(../_fonts/JosefinSlab-Bold.ttf)
+}
+/* fim */
+
+body {
+    font-family: Josefin-Slab;
+    background-image: url(../_images/fundo.jpg);
+}
+
+/* Css Navbar e Carrousel */
+    .font-Simplifica {
+        font-family: Simplifica;
+        font-size: 190%;
+    }
+    div.canto-r {
+        width: 20px;
+        height: 20px;
+        border: 10px solid;
+        border-color: transparent transparent #414141 #414141;
+        position: absolute;
+        top: 3rem;
+        left: 0rem; 
+    }
+    div.canto-l {
+        width: 20px;
+        height: 20px;
+        border: 10px solid;
+        border-color: transparent #414141 #414141 transparent;
+        position: absolute;
+        top: 3rem;
+        right: 0rem;
+    }
+    div.aument div a {
+        font-size: 150%;
+        transition: color 0.5s;
+    }
+    div.aument div a:hover {
+        color: #b90101 !important;
+    }
+    .logo {
+        position: absolute;
+        z-index: 100;
+        width: 25%;
+        top: 12rem;
+        right: 37%;
+    }
+    .bg-Kama {
+        background-color: #272727;
+    }
+    .titulo {
+        font-size: 210%;
+        font-family: Josefin-Slab-Bold;
+    }
+    .sub-t {
+        font-size: 170%;
+    }
+/* Fim */
+
+/* Css do modal*/
+    .t-modal {
+        font-family: Josefin-Slab-Bold;
+    }
+    .link-modal {
+        text-decoration: none;
+        font-size: 130%;
+        color: #b4b4b4;
+        transition: color 0.5s;
+    }
+    .link-modal:hover {
+        color: rgb(255, 92, 92);
+    }
+    .btn-mod {
+        position: absolute !important;
+        top: 38.5rem;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+/* fim */
+
+/* Css dos elementos centrais */
+    .bloco-texto {
+        border-radius: 10px;
+        background-color: rgb(248, 248, 248);
+        box-shadow: 3px 3px solid #242424;
+        margin: 0.6rem 0;
+        padding: 2%;
+        width: 70%;
+    }
+    .logo p {
+        font-size: 150%;
+    }
+    .circulo {
+        width: 230px;
+        height: 230px;
+        background-color: rgb(204, 204, 204);
+    }
+    .circulo i {
+        font-size: 800%;
+        color: #ebebeb;
+    }
+    .text-cinza-12 {
+        color: #575757;
+        font-size: 120%;
+    }
+    .text-cinza {
+        color: #575757;
+    }
+/* fim */
+
+/* Css do footer */
+    .footer {
+        border-top: 0.5rem solid #525252;
+        background-color: #363636
+    }
+    .footer div div div hr {
+        padding: 0.3%;
+        border-radius: 3px;
+    }
+    .color-f {
+        color: #818181;
+    }
+    .bg-f {
+        background-color: #818181;
+    }
+    .link-footer {
+        text-decoration: none !important;
+        font-size: 110%;
+        transition: color 0.5s;
+    }
+    .link-footer:hover {
+        color: #ca0000;
+    }
+    .subir {
+        color: #818181;
+        transition: color 0.5s;
+    }
+    .subir:hover {
+        color: #ca0000;
+    }
+    .bg-final {
+        background-color: #525252;
+    }
+    #final {
+        font-size: 140%;
+    }
+/* fim */
+
+/* Área de Media Queries */
+    @media (min-width: 1367px) {
+        .font-Simplifica {
+            font-size: 190%;
+        }
+        nav div div div div div a {
+            font-size: 150% !important;
+        }
+        div[class="carousel-inner"] img {
+            height: 1015px !important;
+        }
+        div[class="carousel-caption"] {
+            bottom: 200px !important;
+        }
+        .btn-mod {
+            top: 55rem;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            font-size: 200%;
+        }
+        .titulo {
+            font-size: 400%;
+        }
+        .sub-t {
+            font-size: 280%;
+        }
+        .text-cinza-12 {
+            font-size: 100%;
+        }
+        footer div div div h5 {
+            font-size: 200% !important;
+        }
+        footer div div div ul li a {
+            font-size: 175% !important;
+        }
+        .bloco-texto {
+            font-size: 200% !important;
+        }
+        .circulo {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(204, 204, 204);
+        }
+    }
+    @media (max-width: 1010px) {
+        .font-Simplifica {
+            font-size: 133%;
+        }
+        nav div div div form input {
+            width: 145px !important;
+            height: 40px !important;
+        }
+        nav div div div div div a {
+            font-size: 120% !important;
+        }
+        .btn-mod {
+            top: 37rem;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+        div[class="carousel-caption"] {
+            bottom: 100px !important;
+        }
+        .circulo {
+            width: 170px;
+            height: 170px;
+            background-color: rgb(204, 204, 204);
+        }
+        .circulo i {
+            font-size: 600%;
+            color: #ebebeb;
+        }
+        .text-cinza-12 {
+            font-size: 100%;
+        }
+        footer div div div h5 {
+            font-size: 125% !important;
+        }
+        footer div div div ul li a {
+            font-size: 100% !important;
+        }
+    }
+    @media (max-width: 767px) {
+        .font-Simplifica {
+            font-size: 130%;
+        }
+        nav div div div form input {
+            width: 140px !important;
+            height: 40px !important;
+        }
+        nav div div div div div a {
+            font-size: 110% !important;
+        }
+        div.canto-r, div.canto-l {
+            top: 5.6rem;
+        }
+        div[class="carousel-inner"] img {
+            height: 450px !important;
+        }
+        div[class="carousel-caption"] {
+            bottom: 135px !important;
+        }
+        .titulo {
+            font-size: 160%;
+        }
+        .sub-t {
+            font-size: 130%;
+        }
+        .logo {
+            z-index: 0;
+        }
+        .btn-mod {
+            top: 30rem;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+        .link-modal {
+            font-size: 97%;
+        }
+        .bloco-texto {
+            width: 90%;
+            font-size: 110% !important;
+        }
+        #icones {
+            position: absolute;
+            display: none;
+        }
+        footer div div div h5 {
+            font-size: 130% !important;
+        }
+        footer div div div ul li a {
+            font-size: 110% !important;
+        }
+        #marca {
+            padding-left: 3rem;
+            margin-bottom: 1rem;
+        }
+        #subir {
+            position: absolute;
+            display: none;
+        }
+        #final {
+            font-size: 90% !important;
+        }
+    }
+    @media (max-width: 400px) {
+        .font-Simplifica {
+            font-size: 110%;
+        }
+        nav div div div form input {
+            width: 120px !important;
+            height: 30px !important;
+        }
+        .link-modal {
+            font-size: 95%;
+        }
+        footer div div div h5 {
+            font-size: 120% !important;
+        }
+        footer div div div ul li a {
+            font-size: 96% !important;
+        }
+    }
+/* fim */
